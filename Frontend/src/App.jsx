@@ -13,7 +13,7 @@ const Layout = () => {
   return (
     <div className="app">
       <MobileNav nav={nav} closeNav={closeNav} />
-      <Nav openNav={openNav} />
+      {/* <Nav openNav={openNav} /> */}
       <Outlet />
       {/* <Footer /> */}
     </div>
