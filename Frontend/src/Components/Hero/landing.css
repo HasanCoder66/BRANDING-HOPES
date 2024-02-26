@@ -1,0 +1,39 @@
+#landing {
+    min-height: 100vh;
+    background:
+        linear-gradient(135deg, #0000 20.5%, #fafafa 0 29.5%, #0000 0) 0 5.5px, 
+     linear-gradient(45deg, #0000 8%, #fafafa 0 17%, #0000 0 58%) 11px 0, 
+     linear-gradient(135deg, #0000 8%, #fafafa 0 17%, #0000 0 58%, #fafafa 0 67%, #0000 0), 
+     linear-gradient(45deg, #0000 8%, #fafafa 0 17%, #0000 0 58%, #fafafa 0 67%, #0000 0 83%, #fafafa 0 92%, #0000 0), 
+     rgba(89, 194, 117, 0.14); 
+ background-size: 40px 40px;
+}
+
+@media (max-width: 640px) {
+    .wrapper {
+        padding: 0 10px !important;
+    }
+
+    .landingTitle {
+        font-size: 4.7rem !important;
+    }
+
+    .subText {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .landingTitle {
+        font-size: 4rem !important;
+    }
+
+    .subText {
+        font-size: 1rem !important;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+}

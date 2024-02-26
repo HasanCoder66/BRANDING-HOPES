@@ -10,7 +10,7 @@ const MobileNav = ({ nav, closeNav }) => {
   // console.log(navAnimated);
   return (
     <div
-      className={`fixed ${navAnimated}  transform transition-all duration-300 top-0 bottom-0 left-0 right-0 z-[1000000] bg-[#cadcfc]`}
+      className={`fixed ${navAnimated}  transform transition-all duration-300 top-0 bottom-0 left-0 right-0 z-[1000000] bg-[#05386b]`}
     >
       <div className="flex z-[1000000] flex-col w-[100vw] h-[100vh] justify-center items-center">
         <Link to="/">

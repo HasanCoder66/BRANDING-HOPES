@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { useState } from "react";
 import Nav from "./Components/Navbar/Nav";
 import MobileNav from "./Components/MobileNav/MobileNav";
+import Home from "./Pages/HomePage/Home";
 
 
 const Layout = () => {
@@ -24,10 +25,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      // {
-      //   path: "/",
-      //   element: <Home />,
-      // },
+      {
+        path: "/",
+        element: <Home />,
+      },
       // {
       //   path: "/Home",
       //   element: <Home />,
