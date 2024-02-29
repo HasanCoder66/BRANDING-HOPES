@@ -3,7 +3,7 @@ import React from "react";
 import "../../App.css";
 import { Link } from "react-router-dom";
 // import Topbar from "../Topbar/Topbar";
-// import DropdownMenu from "../Dropdown/Dropdown";
+import DropdownMenu from "../../Components/Dropdown/Dropdown";
 
 const Nav = ({ openNav }) => {
   return (
@@ -19,13 +19,16 @@ const Nav = ({ openNav }) => {
           <div className="nav-link">Home</div>
         </Link>
         <div className="nav-link">
-          {/* <DropdownMenu /> */}
+          <DropdownMenu />
         </div>
         <Link to="/about">
           <div className="nav-link">About</div>
         </Link>
         <Link to='/blog'>
           <div className="nav-link">Blog</div>
+        </Link>
+        <Link>
+          <div className="nav-link">Services</div>
         </Link>
         <Link>
           <div className="nav-link">Portfolio</div>
