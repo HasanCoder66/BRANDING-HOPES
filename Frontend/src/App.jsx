@@ -1,12 +1,11 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-// import Home from "./Pages/Home/Home";
 import { useState } from "react";
 import Nav from "./Components/Navbar/Nav";
 import MobileNav from "./Components/MobileNav/MobileNav";
 import HomePage from "./Pages/HomePage/HomePage";
-import Footer from './Components/Footer/Footer'
+import Footer from "./Components/Footer/Footer";
 import AboutPage from "./Pages/AboutPage/AboutPage";
-
+import ContactPage from "./Pages/ContactPage/ContactPage";
 
 const Layout = () => {
   const [nav, setNav] = useState(false);
@@ -35,7 +34,10 @@ const router = createBrowserRouter([
         path: "/about",
         element: <AboutPage />,
       },
-      
+      {
+        path: "/contact",
+        element: <ContactPage />,
+      },
     ],
   },
 ]);
