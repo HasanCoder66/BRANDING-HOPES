@@ -1,11 +1,3 @@
-// import About from "../../components/About/About";
-// import CardPackages from "../../components/Card";
-// import PricingCmp from "../../components/PricingCmp";
-// import Contact from "../../components/Contact/Contact";
-// import ServiceCardCmp from "../../components/ServiceCard";
-// import ServicesContentHead from '../../components/ServiceContentHead/index'
-// import ServiceCard from '../../Components/ServiceCard/ServiceCard';
-// import serviceData from "../../omponents/ServiceCard/servicesData"
 import "./HomePage.css";
 import Landing from "../../Components/Hero/Landing";
 import IntroServicesCmp from "../../Components/IntroServicesCmp/IntroServices";

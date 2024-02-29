@@ -9,7 +9,7 @@ const Nav = ({ openNav }) => {
   return (
     <>
     {/* <Topbar /> */}
-    <div className="w-[100%] fixed z-[10000] top-120 h-[11vh] bg-[#05386b] shadow-md">
+    <div className="w-[100%] fixed z-[10000]  h-[11vh] bg-[#05386b] shadow-md">
       <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
         <h1 className="flex-[0.6] cursor-pointer text-[25px] font-bold text-[#097969] ">
         Branding Hopes

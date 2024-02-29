@@ -2,7 +2,7 @@
 function Contact() {
   return (
     <>
-      <div className="text-[#59c174] font-bold text-3xl  flex justify-center mt-[2rem] mb-[1rem]">
+      <div className="text-[#59c174] font-bold text-3xl  flex justify-center  mb-[1rem]">
         Contact Us
       </div>
       <div className="flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 w-[100%]">

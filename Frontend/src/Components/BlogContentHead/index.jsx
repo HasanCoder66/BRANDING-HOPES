@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogContentHead = () => {
   return (
-    <div class="row mt-4">
+    <div class="row ">
       <h1 className="text-[#59c174] font-bold text-3xl mb-[1rem] flex justify-center ">
         Create Your Blog Here!
       </h1>
