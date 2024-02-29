@@ -6,6 +6,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import Footer from "./Components/Footer/Footer";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
+import BlogPage from "./Pages/BlogPage/BlogPage";
 
 const Layout = () => {
   const [nav, setNav] = useState(false);
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/blog",
+        element: <BlogPage />,
       },
     ],
   },
