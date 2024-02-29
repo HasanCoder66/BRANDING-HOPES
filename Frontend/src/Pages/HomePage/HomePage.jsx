@@ -1,15 +1,18 @@
-import './HomePage.css'
 // import About from "../../components/About/About";
 // import CardPackages from "../../components/Card";
 // import PricingCmp from "../../components/PricingCmp";
 // import Contact from "../../components/Contact/Contact";
-import Landing from "../../Components/Hero/Landing";
-import IntroServicesCmp from "../../Components/IntroServicesCmp/IntroServices";
 // import ServiceCardCmp from "../../components/ServiceCard";
 // import ServicesContentHead from '../../components/ServiceContentHead/index'
-import Button from "../../Components/ButtonNew/Button";
-import ServiceCard from '../../Components/ServiceCard/ServiceCard';
+// import ServiceCard from '../../Components/ServiceCard/ServiceCard';
 // import serviceData from "../../omponents/ServiceCard/servicesData"
+import "./HomePage.css";
+import Landing from "../../Components/Hero/Landing";
+import IntroServicesCmp from "../../Components/IntroServicesCmp/IntroServices";
+import Button from "../../Components/ButtonNew/Button";
+import BlogPage from "../BlogPage/BlogPage";
+import ContactPage from "../ContactPage/ContactPage";
+import About from "../../Components/About/About";
 
 const HomePage = () => {
   return (
@@ -31,15 +34,15 @@ const HomePage = () => {
           <Button text="See More" link="/services" />
         </div>
       </div>
-      {/* <About />
-      <PricingCmp /> */}
+      <About />
+      {/* <PricingCmp /> */}
       <div className="content flex items-center justify-evenly lg:flex-row md:flex-col sm:flex-col">
         {/* <CardPackages type="startup" color="bg-white" />
         <CardPackages type="standard" color="bg-white" />
         <CardPackages type="premium" color="bg-white" /> */}
       </div>
-      {/* <Blog /> */}
-      {/* <Contact /> */}
+      <BlogPage />
+      <ContactPage />
     </div>
   );
 };

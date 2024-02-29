@@ -1,14 +1,11 @@
-import React from "react";
-import NavbarT from "../../../../../ALL-React-Projects/BRANDING-HOPES-OFFICIAL/FRONTEND/src/components/Navbar/NavbarT";
-import Footer from "../../../../../ALL-React-Projects/BRANDING-HOPES-OFFICIAL/FRONTEND/src/components/Footer/Footer";
+
 function Contact() {
   return (
     <>
-      {/* <NavbarT /> */}
       <div className="text-[#59c174] font-bold text-3xl  flex justify-center mt-[2rem] mb-[1rem]">
         Contact Us
       </div>
-      <div className="flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 w-[100%]" >
+      <div className="flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 w-[100%]">
         <div className="max-w-6xl mx-auto sm:px-6 w-[100%] min-h-[370px] lg:px-8 bg-[#2c2e48] shadow-lg shadow-gray-500/50">
           <div className="mt-8 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -35,7 +32,6 @@ function Contact() {
                       stroke-linejoin="round"
                       stroke-width="1.5"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-
                     />
                     <path
                       stroke-linecap="round"
@@ -150,7 +146,6 @@ function Contact() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 }

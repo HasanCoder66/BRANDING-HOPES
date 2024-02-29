@@ -24,6 +24,9 @@ const Nav = ({ openNav }) => {
         <Link to="/about">
           <div className="nav-link">About</div>
         </Link>
+        <Link to='/blog'>
+          <div className="nav-link">Blog</div>
+        </Link>
         <Link>
           <div className="nav-link">Portfolio</div>
         </Link>
