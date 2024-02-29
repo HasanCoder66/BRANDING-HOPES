@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './landing.css'
 import Button from '../ButtonNew/Button'
 

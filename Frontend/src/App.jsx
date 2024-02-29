@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { useState } from "react";
 import Nav from "./Components/Navbar/Nav";
 import MobileNav from "./Components/MobileNav/MobileNav";
-import Home from "./Pages/HomePage/Home";
+import HomePage from "./Pages/HomePage/HomePage";
 
 
 const Layout = () => {
@@ -13,7 +13,7 @@ const Layout = () => {
   return (
     <div className="app">
       <MobileNav nav={nav} closeNav={closeNav} />
-      {/* <Nav openNav={openNav} /> */}
+      <Nav openNav={openNav} />
       <Outlet />
       {/* <Footer /> */}
     </div>
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <HomePage />,
       },
       // {
       //   path: "/Home",

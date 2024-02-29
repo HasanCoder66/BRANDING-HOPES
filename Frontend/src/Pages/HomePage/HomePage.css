@@ -1,0 +1,9 @@
+@media (max-width: 640px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .landingTitle {
+        font-size: 30px;
+    }
+}

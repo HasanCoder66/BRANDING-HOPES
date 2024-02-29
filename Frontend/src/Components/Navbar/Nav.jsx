@@ -2,7 +2,7 @@ import { Bars3Icon } from "@heroicons/react/16/solid";
 import React from "react";
 import "../../App.css";
 import { Link } from "react-router-dom";
-import Topbar from "../Topbar/Topbar";
+// import Topbar from "../Topbar/Topbar";
 // import DropdownMenu from "../Dropdown/Dropdown";
 
 const Nav = ({ openNav }) => {
