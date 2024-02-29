@@ -8,7 +8,8 @@ import IntroServicesCmp from "../../Components/IntroServicesCmp/IntroServices";
 // import ServiceCardCmp from "../../components/ServiceCard";
 // import ServicesContentHead from '../../components/ServiceContentHead/index'
 import Button from "../../Components/ButtonNew/Button";
-// import serviceData from "../../components/ServiceCard/servicesData"
+import ServiceCard from '../../Components/ServiceCard/ServiceCard';
+// import serviceData from "../../omponents/ServiceCard/servicesData"
 
 const HomePage = () => {
   return (
@@ -21,6 +22,7 @@ const HomePage = () => {
           {/* <ServicesContentHead /> */}
         </div>
         <div className="serviceCard flex w-[100%] justify-around mb-[50px] flex-wrap">
+          {/* <ServiceCard /> */}
           {/* <ServiceCardCmp data={serviceData[0]} />
           <ServiceCardCmp data={serviceData[1]} />
           <ServiceCardCmp data={serviceData[2]} /> */}

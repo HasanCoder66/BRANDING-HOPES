@@ -4,6 +4,8 @@ import { useState } from "react";
 import Nav from "./Components/Navbar/Nav";
 import MobileNav from "./Components/MobileNav/MobileNav";
 import HomePage from "./Pages/HomePage/HomePage";
+import Footer from './Components/Footer/Footer'
+import AboutPage from "./Pages/AboutPage/AboutPage";
 
 
 const Layout = () => {
@@ -15,7 +17,7 @@ const Layout = () => {
       <MobileNav nav={nav} closeNav={closeNav} />
       <Nav openNav={openNav} />
       <Outlet />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
@@ -29,10 +31,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomePage />,
       },
-      // {
-      //   path: "/Home",
-      //   element: <Home />,
-      // },
+      {
+        path: "/about",
+        element: <AboutPage />,
+      },
       
     ],
   },
