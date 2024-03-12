@@ -39,8 +39,8 @@ const HomePage = () => {
         <CardPackages type="standard" color="bg-white" />
         <CardPackages type="premium" color="bg-white" /> */}
       </div>
-      <BlogPage />
-      <ContactPage />
+      {/* <BlogPage />
+      <ContactPage /> */}
     </div>
   );
 };
