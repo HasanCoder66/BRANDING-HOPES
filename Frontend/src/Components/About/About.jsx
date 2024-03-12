@@ -1,5 +1,5 @@
 import React from "react";
-import "./about.css";
+import Button from "../ButtonNew/Button";
 // import NavbarT from "../Navbar/NavbarT";
 // import Footer from "../Footer/Footer";
 // import Navbar from "../Navbar/Navbar";
@@ -10,9 +10,9 @@ import "./about.css";
 function About({ type }) {
   return (
     <>
-      <div className="about-page text-center">
+      <div className="about-page text-center bg-[#e5e5e5] mt-[4rem] mb-[4rem]">
         <div className="py-16 ">
-          <div className="container m-auto px-6 text-[#2c2e48] md:px-12 xl:px-6">
+          <div className="container m-auto px-6 md:px-12 xl:px-6">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:5/12 lg:w-5/12 ">
                 <img
@@ -22,15 +22,18 @@ function About({ type }) {
                 />
               </div>
               <div className="md:7/12 lg:w-6/12">
-                <h2 className="text-2xl text-[#59c174] font-bold md:text-4xl">
+                <h2 className="text-2xl text-[#fca311] font-bold md:text-4xl">
                   About Branding Hopes
                 </h2>
-                <p className="text mt-6 text-[#2c2e48] text-center">
+                <p className="text mt-6 text-[#000000] text-center">
                   At Branding Hopes, we are more than just a digital marketing
                   agency – we are your partners in success. With a passion for
                   creativity and a drive for results, we are dedicated to
                   helping businesses like yours thrive in the digital age.
                 </p>
+                <div className='mt-[2rem]'>
+                <Button text='Learn More'/>
+                </div>
               </div>
             </div>
           </div>

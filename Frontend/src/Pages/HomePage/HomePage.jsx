@@ -15,7 +15,7 @@ const HomePage = () => {
       <div className="flex flex-col item-center justify-center w-[100%]">
         <div className="serviceIntro">
           <IntroServicesCmp />
-         <div className="flex justify-evenly mt-[2rem]">
+         <div className="flex justify-evenly mt-[2rem] flex-wrap items-center">
          {cardDataPort.map((data) => (
             <PortCard data={data} />
           ))}
