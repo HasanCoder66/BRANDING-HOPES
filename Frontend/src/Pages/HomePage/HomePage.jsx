@@ -5,7 +5,8 @@ import Button from "../../Components/ButtonNew/Button";
 import BlogPage from "../BlogPage/BlogPage";
 import ContactPage from "../ContactPage/ContactPage";
 import About from "../../Components/About/About";
-
+import PortCard from "../../Components/PortfolioCard/PortCard";
+import cardDataPort from "../../Components/PortfolioCard/cardDataPort";
 const HomePage = () => {
   return (
     <div>
@@ -14,7 +15,12 @@ const HomePage = () => {
       <div className="flex flex-col item-center justify-center w-[100%]">
         <div className="serviceIntro">
           <IntroServicesCmp />
-          {/* <ServicesContentHead /> */}
+         <div className="flex justify-evenly mt-[2rem]">
+         {cardDataPort.map((data) => (
+            <PortCard data={data} />
+          ))}
+         </div>
+         
         </div>
         <div className="serviceCard flex w-[100%] justify-around mb-[50px] flex-wrap">
           {/* <ServiceCard /> */}

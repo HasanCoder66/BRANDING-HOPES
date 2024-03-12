@@ -11,7 +11,7 @@ const Landing = () => {
                 <p className='my-[50px] text-[1.3rem] font-normal text-[#000000]'>Empower Your Presence with Branding Hopes - Where Imagination Meets Innovation in Web Development, Design, SEO, and Digital Mastery</p>
                 <div className="btns flex justify-center gap-[20px]">
                     <Button text="Get Started" link="/" />
-                    <Button text="Our services" link="/services" />
+                    <Button text="Our Services" link="/services" />
                 </div>
             </div>
         </div>
