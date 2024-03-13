@@ -6,10 +6,10 @@ const GetConsultant = () => {
   return (
     <div className='lg:p-[5rem] lg:pr-[5rem] px-[2rem] pb-[3rem] h-[100vh] bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1708534584/branding%20hopes/banner_b0pbcx.jpg")]  pt-[12vh] bg-cover bg-center bg-[#18252b] '>
       <div>
-        <h1 className="text-[35px] md:text-[50px] text-[#FDDA0D]  font-bold ">
+        <h1 className="text-[35px] md:text-[50px] text-[#fca311]  font-bold ">
           Get
           <span className="text-white"> Free</span>
-          <span className=" text-[#097969]"> Consultancy!</span>
+          <span className=" text-[#e5e5e5]"> Consultancy!</span>
         </h1>
         <p className="mt-[1.5rem] text-[20px] text-[#ffffff]">
           We have experts available to provide guidance for you.
@@ -23,9 +23,9 @@ const GetConsultant = () => {
           <TextareaCmp />
         </div>
         <div className="right flex-1 flex justify-start items-center mt-[2rem]">
-          <button className="py-[17px] px-[39px]  bg-[#fdda0d]  hover:text-white font-bold hover:bg-[#097969]">
-            Submit
-          </button>
+        <button className="cursor-pointer  md:w-32  mt-[1rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300">
+                  <span>Submit</span>
+                </button>
         </div>
       </div>
     </div>

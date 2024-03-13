@@ -8,6 +8,7 @@ import AboutPage from "./Pages/AboutPage/AboutPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import BlogPage from "./Pages/BlogPage/BlogPage";
 import GetConsultant from "./Pages/GetConsultPage/GetConsultant";
+import Portfolio from "./Pages/PortfolioPage/Portfolio";
 
 const Layout = () => {
   const [nav, setNav] = useState(false);
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <AboutPage />,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio />,
       },
       {
         path: "/contact",

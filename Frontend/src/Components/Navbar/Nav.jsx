@@ -33,10 +33,10 @@ const Nav = ({ openNav }) => {
           <Link to="/blog">
             <div className="nav-link">Blog</div>
           </Link>
-          <Link>
+          <Link >
             <div className="nav-link">Services</div>
           </Link>
-          <Link>
+          <Link to='/portfolio'>
             <div className="nav-link">Portfolio</div>
           </Link>
           <Link to="/Contact">
