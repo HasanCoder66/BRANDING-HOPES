@@ -2,13 +2,11 @@ import { Bars3Icon } from "@heroicons/react/16/solid";
 import React from "react";
 import "../../App.css";
 import { Link } from "react-router-dom";
-// import Topbar from "../Topbar/Topbar";
 import DropdownMenu from "../../Components/Dropdown/Dropdown";
 
 const Nav = ({ openNav }) => {
   return (
     <>
-      {/* <Topbar /> */}
       <div className="w-[100%] fixed z-[10000] flex items-center  h-[11vh] bg-[#14213d] shadow-md">
         <div className="w-[100%] flex items-center justify-between h-[100%] px-[50px]">
           <Link to="/">
