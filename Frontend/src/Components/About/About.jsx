@@ -10,10 +10,10 @@ import Button from "../ButtonNew/Button";
 function About({ type }) {
   return (
     <>
-      <div className="about-page text-center  mt-[4rem] mb-[4rem]  ">
-        <div className="py-16 ">
+      <div className="about-page text-center">
+        <div className="pt-[100px] ">
           <div className="container m-auto px-6 md:px-12 xl:px-6">
-            <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+            <div className="md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:5/12 lg:w-5/12 ">
                 <img
                   src="https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705363200&semt=ais"
@@ -32,7 +32,7 @@ function About({ type }) {
                   helping businesses like yours thrive in the digital age.
                 </p>
                 <div className='mt-[2rem]'>
-                <Button text='Learn More'/>
+                  <Button text='Learn More' />
                 </div>
               </div>
             </div>

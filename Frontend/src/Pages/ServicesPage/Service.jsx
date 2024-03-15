@@ -23,25 +23,25 @@ const Service = () => {
     packageName === "logo"
       ? logoPackage
       : packageName === "web"
-      ? websitePackage
-      : packageName === "ecommerce"
-      ? ecommercePackage
-      : packageName === "seo"
-      ? seoPackage
-      : packageName === "smm"
-      ? smmPackage
-      : packageName === "video"
-      ? videoPackage
-      : packageName === "branding"
-      ? brandingPackage
-      : packageName === "hosting"
-      ? hostingPackage
-      : [];
+        ? websitePackage
+        : packageName === "ecommerce"
+          ? ecommercePackage
+          : packageName === "seo"
+            ? seoPackage
+            : packageName === "smm"
+              ? smmPackage
+              : packageName === "video"
+                ? videoPackage
+                : packageName === "branding"
+                  ? brandingPackage
+                  : packageName === "hosting"
+                    ? hostingPackage
+                    : [];
 
   // console.log(data, "===>>>> data")
 
   return (
-    <div className="serviceContainer bg-[#097969] mt-[75px]">
+    <div className="serviceContainer bg-[#097969]">
       <div className="serviceWrapper py-[150px] px-[76px]">
         <div className="mb-[30px]">
           <h1 className="text-[40px] font-bold text-white">
