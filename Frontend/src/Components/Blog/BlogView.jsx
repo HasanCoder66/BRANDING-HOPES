@@ -4,52 +4,52 @@ import "./blogview.css";
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 // import { useNavigate } from "react-router-dom";
-// import { onAuthStateChanged , auth } from "../../firebase/config.js";
+// // import { onAuthStateChanged, auth } from "../../firebase/config.js";
 function BlogView() {
-  //   const allBlogs = JSON.parse(localStorage.getItem('allBlogs')) || []
+  // const allBlogs = JSON.parse(localStorage.getItem('allBlogs')) || []
 
-  //   const navigate = useNavigate()
+  // const navigate = useNavigate()
 
-  //   const user = useRef()
-  //   const blogcontent = useRef()
-  //   const blogdescription = useRef()
-  //   const blogtitle = useRef()
+  // const user = useRef()
+  // const blogcontent = useRef()
+  // const blogdescription = useRef()
+  // const blogtitle = useRef()
 
-  //   function createBlogHandler () {
-  //     // console.log(user.current.value);
-  //     // console.log(blogcontent.current.value);
-  //     // console.log(blogdescription.current.value);
-  //     // console.log(blogtitle.current.value);
+  // function createBlogHandler() {
+  //   // console.log(user.current.value);
+  //   // console.log(blogcontent.current.value);
+  //   // console.log(blogdescription.current.value);
+  //   // console.log(blogtitle.current.value);
 
-  //     const blog = {
-  //       username: user?.current?.value,
-  //       blogcontent: blogcontent?.current?.value,
-  //       blogdescription: blogdescription?.current?.value,
-  //       blogtitle: blogtitle?.current?.value
-  //     }
-
-  // allBlogs.push(blog)
-
-  //     localStorage.setItem('allBlogs', JSON.stringify(allBlogs))
-  //     toast.success('blog added')
-  //     setTimeout(() => {
-  //       navigate('/')
-  //     }, 5000)
+  //   const blog = {
+  //     username: user?.current?.value,
+  //     blogcontent: blogcontent?.current?.value,
+  //     blogdescription: blogdescription?.current?.value,
+  //     blogtitle: blogtitle?.current?.value
   //   }
 
-  //   onAuthStateChanged(auth, (user) => {
-  //     if (user) {
-  //       console.log(user)
-  //       // User is signed in, see docs for a list of available properties
-  //       // https://firebase.google.com/docs/reference/js/auth.user
-  //       const uid = user.uid;
-  //       console.log(uid)
-  //       // ...
-  //     } else {
-  //       // User is signed out
-  //       // ...
-  //     }
-  //   });
+  //   allBlogs.push(blog)
+
+  //   localStorage.setItem('allBlogs', JSON.stringify(allBlogs))
+  //   toast.success('blog added')
+  //   setTimeout(() => {
+  //     navigate('/')
+  //   }, 5000)
+  // }
+
+  // onAuthStateChanged(auth, (user) => {
+  //   if (user) {
+  //     console.log(user)
+  //     // User is signed in, see docs for a list of available properties
+  //     // https://firebase.google.com/docs/reference/js/auth.user
+  //     const uid = user.uid;
+  //     console.log(uid)
+  //     // ...
+  //   } else {
+  //     // User is signed out
+  //     // ...
+  //   }
+  // });
 
   {
     /* lg:px-8 bg-gray-500 shadow-lg shadow-gray-500/ */

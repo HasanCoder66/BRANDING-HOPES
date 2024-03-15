@@ -20,7 +20,7 @@ const Nav = ({ openNav }) => {
               />
             </div>
           </Link>
-          <div className="flex gap-[19px] ">
+          <div className="flex gap-[50px] ">
             <Link to="/">
               <div className="nav-link">Home</div>
             </Link>
