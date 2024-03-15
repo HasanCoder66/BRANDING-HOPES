@@ -10,7 +10,7 @@ import Button from "../ButtonNew/Button";
 function About({ type }) {
   return (
     <>
-      <div className="about-page text-center bg-[#e5e5e5] mt-[4rem] mb-[4rem]">
+      <div className="about-page text-center  mt-[4rem] mb-[4rem]  ">
         <div className="py-16 ">
           <div className="container m-auto px-6 md:px-12 xl:px-6">
             <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
@@ -73,6 +73,7 @@ function About({ type }) {
                     </div>
                 </div> */}
       </div>
+      {/* </div> */}
     </>
   );
 }

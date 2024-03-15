@@ -1,10 +1,10 @@
 import './introService.css'
-import { Link } from "react-router-dom";
-import Button from "../ButtonNew/Button";
+// import { Link } from "react-router-dom";
+// import Button from "../ButtonNew/Button";
 
 const IntroServicesCmp = () => {
   return (
-    <div className="mt-[3rem]">
+    <div className="">
       <div className="flex flex-col items-center">
         {/* <Button text="Discover Branding Hopes" link="/" /> */}
         <div className="mt-[20px] text-center">
