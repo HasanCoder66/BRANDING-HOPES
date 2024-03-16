@@ -6,7 +6,6 @@ const IntroServicesCmp = () => {
   return (
     <div className="">
       <div className="flex flex-col items-center">
-        {/* <Button text="Discover Branding Hopes" link="/" /> */}
         <div className="mt-[20px] text-center flex flex-col gap-[10px]">
           <h2 className="text-[#14213d] text-5xl font-bold tracking-widest	 serviceTitle">Crafting Success in New </h2>
           <h2 className="text-[#e5e5e5] text-3xl font-bold tracking-widest	 serviceTitle">York's Digital Landscape </h2>
@@ -19,15 +18,3 @@ const IntroServicesCmp = () => {
 };
 
 export default IntroServicesCmp;
-
-
-{/* <div className="flex justify-center mt-[2rem] flex-col ">
-     
-        <div className=" px-[80px] flex flex-col item-center text-center  font-['Poppins', sans-serif'] text-[#2c2e48]">
-          
-            
-          
-         
-            
-          </div>
-        </div> */}
