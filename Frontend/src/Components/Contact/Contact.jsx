@@ -1,5 +1,43 @@
 // import './Contact.css'
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+
 function Contact() {
+  const form = useRef();
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [name, setName] = useState("");
+
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (
+      email === "" ||
+      number === "" ||
+      name === "" 
+    ) {
+      return toast.error("Missings Fields");
+    } else {
+      console.log("send");
+      emailjs
+        .sendForm("service_or4rkcq", "template_2q5x5yd", form.current, {
+          publicKey: "IErOLB5UYKwIo5_Ux",
+        })
+        .then(
+          () => {
+            console.log("SUCCESS!");
+            toast.success("Email Send Successfully");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+            toast.error("Email Send Failed");
+          }
+        );
+    }
+  };
   return (
     <>
       <div className=" font-bold text-3xl  flex justify-center  mb-[1rem] ">
@@ -91,7 +129,7 @@ function Contact() {
                 </div>
               </div>
 
-              <form className="p-6 flex flex-col justify-center">
+              <form className="p-6 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
                 <div className="flex flex-col">
                   <label for="name" className="hidden">
                     Full Name
@@ -102,6 +140,7 @@ function Contact() {
                     id="name"
                     placeholder="Full Name"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-[#14213d] font-semibold focus:border-[#fca311] focus:outline-none"
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
 
@@ -115,6 +154,7 @@ function Contact() {
                     id="email"
                     placeholder="Email"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
@@ -128,20 +168,26 @@ function Contact() {
                     id="tel"
                     placeholder="Telephone Number"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none"
+                    onChange={(e) => setNumber(e.target.value)}
                   />
                 </div>
-                <button className="cursor-pointer  md:w-32  mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300">
+                <button type="submit" className="cursor-pointer  md:w-32  mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300">
                   <span>Submit</span>
                 </button>
-                {/* <button
-                  type="submit"
-                  // 
-                  // style={{backgroundColor:'#484848'}}
-                  className="md:w-32 bg-green-700  hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-gray-600 transition ease-in-out duration-300"
-                >
-                  Submit
-                </button> */}
               </form>
+              <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition:Bounce
+      />
             </div>
           </div>
         </div>
