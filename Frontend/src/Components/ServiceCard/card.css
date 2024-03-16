@@ -3,10 +3,10 @@
 }
 
 .scroll::-webkit-scrollbar-track {
-    background: #097969;
+    background: #14213d;
 
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background: #fdda0d;
+    background: #fca311;
 }
