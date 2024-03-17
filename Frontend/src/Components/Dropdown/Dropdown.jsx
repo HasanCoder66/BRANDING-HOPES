@@ -21,54 +21,70 @@ function DropdownMenu({ closeNav }) {
           className="absolute text-black z-10 bg-[#e5e5e5] rounded shadow w-[250px] mt-2 py-2 text-[15px] "
           onMouseLeave={handleMouseLeave}
         >
+          <Link to="/services/logo">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2  "
             onClick={closeNav}
           >
-            <Link to="/services/logo">Logo Packages</Link>
+            Logo Packages
           </li>
+          </Link>
+          <Link to="/services/web">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2"
             onClick={closeNav}
           >
-            <Link to="/services/web">Website Packages</Link>
+            Website Packages
           </li>
+          </Link>
+          <Link to="/services/ecommerce">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2"
             onClick={closeNav}
           >
-            <Link to="/services/ecommerce">E-Commerce Packages</Link>
+            E-Commerce Packages
           </li>
+          </Link>
+          <Link to="/services/seo">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2  "
             onClick={closeNav}
           >
-            <Link to="/services/seo">Seo Packages</Link>
+            Seo Packages
           </li>
+          </Link>
+          <Link to="/services/smm">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2"
             onClick={closeNav}
           >
-            <Link to="/services/smm">SMM Packages</Link>
+            SMM Packages
           </li>
+          </Link>
+          <Link to="/services/video">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2"
             onClick={closeNav}
           >
-            <Link to="/services/video">Video Packages</Link>
+           Video Packages
           </li>
+          </Link>
+          <Link to="/services/branding">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2"
             onClick={closeNav}
           >
-            <Link to="/services/branding">Branding Packages</Link>
+            Branding Packages
           </li>
+          </Link>
+          <Link to="/services/hosting">
           <li
             className="hover:bg-[#fca311] hover:text-white px-4 py-2"
             onClick={closeNav}
           >
-            <Link to="/services/hosting">Hosting Packages</Link>
+            Hosting Packages
           </li>
+          </Link>
         </ul>
       )}
     </div>
