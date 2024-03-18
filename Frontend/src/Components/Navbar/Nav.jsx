@@ -7,7 +7,8 @@ import DropdownMenu from "../../Components/Dropdown/Dropdown";
 const Nav = ({ openNav }) => {
   return (
     <>
-      <div className="w-[100%] fixed z-[10000] flex items-center  h-[11vh] bg-[#14213d] shadow-md">
+      {/* bg-[#14213d] */}
+      <div className="navContainer w-[100%] fixed z-[10000] flex items-center  h-[11vh] bg-transperant shadow-md">
         <div className="w-[100%] flex items-center justify-between h-[100%] px-[50px]">
           <Link to="/">
             <div className=" w-20 cursor-pointer">
