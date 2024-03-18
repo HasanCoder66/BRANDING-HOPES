@@ -59,9 +59,9 @@ const Landing = () => {
             <Button text="Our Services" link="/services" />
           </motion.div>
         </motion.div>
-        <div className="right flex-1 flex items-center justify-center">
+        <div className="right flex-1 flex items-center justify-center ">
           <motion.div variants={imgVariant} initial="initial" animate="animate" className="imgContainer w-[600px]">
-            <motion.img src="/Innovation-amico.svg" alt="" className="w-[80%] object-contain" />
+            <motion.img src="/Innovation-amico.svg" alt="" className="w-[85%] object-contain" />
           </motion.div>
         </div>
       </div>
