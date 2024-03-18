@@ -9,6 +9,20 @@
   /* z-index: 99999; */
 }
 
+/* body {
+  .scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #14213d;
+
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #fca311;
+}
+} */
 
 .nav-link {
   @apply relative font-semibold text-white text-[17px] cursor-pointer w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#fca311] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden

@@ -38,7 +38,7 @@ function Contact() {
     <>
       <div className="flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 w-[100%]">
       {/* max-w-6xl  +++>> nechy*/}
-        <div className=" mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8 bg-[url('https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503547/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_afbfff7c_gf9sfy.jpg')] bg-cover ">
+        <div className=" mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8 bg-[url('https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503600/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_d669a89d_uooczs.jpg')] bg-cover ">
           {/* <div className=" font-bold text-3xl  flex justify-center  mb-[1rem]   ">
         Contact Us
       </div> */}
@@ -50,7 +50,7 @@ function Contact() {
                   Get in touch:
                 </h1>
                 <p className="text-normal text-lg sm:text-xl font-medium text-[#14213d]  mt-2">
-                  Fill in the form to start a conversation
+                  Fill the form to start a conversation
                 </p>
 
                 <div className="flex items-center mt-8 text-[#14213d] ">
@@ -124,6 +124,10 @@ function Contact() {
                   <div className="ml-4 text-md tracking-wide font-semibold w-40 text-[#14213d] ">
                     hello@brandinghopes.com
                   </div>
+
+                  {/* <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231249.98573963484!2d67.10156955000001!3d25.09234665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3459beb43c7e9%3A0xb42aa8540579a82d!2sGadap%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1710793732881!5m2!1sen!2s" width="600" height="450" style={{border:0}}></iframe>
+                  </div> */}
                 </div>
               </div>
 

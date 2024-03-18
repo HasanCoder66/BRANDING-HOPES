@@ -9,7 +9,8 @@ const HomePage = () => {
     <div className="homeContainer flex flex-col items-center">
       <Landing />
       <ServiceSection />
-      <div className="bg-[url('https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503588/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_2a8b5d60_ufzy1c.jpg')] bg-cover bg-center">
+      {/* bg-[url('https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503588/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_2a8b5d60_ufzy1c.jpg')] bg-cover bg-center */}
+      <div className="">
         <About />
       </div>
       {/* <PricingCmp /> */}

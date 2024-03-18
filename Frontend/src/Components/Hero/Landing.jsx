@@ -43,14 +43,14 @@ const Landing = () => {
     // id='landing'
     // bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503547/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_afbfff7c_gf9sfy.jpg")] bg-cover bg-center bg-[url("/bg-4.png")] bg-cover bg-center
     <div className='landingContainer overflow-x-hidden'>
-      <div className="wrapper px-[80px] py-[20px] flex xl:flex-row flex-col item-center justify-between text-center uppercase font-['Poppins', sans-serif'] mt-[90px]">
+      <div className="wrapper w-[100%] px-[80px] py-[20px] flex xl:flex-row flex-col item-center justify-between text-center uppercase font-['Poppins', sans-serif'] mt-[90px]">
         <motion.div variants={container} initial="hidden" animate="visible" className="left flex-1 flex flex-col items-center justify-center gap-[30px]">
-          <motion.p variants={item} className="subText text-[1.3rem] font-normal text-[#e5e5e5]">Empower Your Presence with Branding Hopes</motion.p>
-          <motion.div variants={item} className="landingTitle text-8xl font-bold text-white">
+          <motion.p variants={item} className="subText text-[1.2rem] font-normal text-[#e5e5e5]">Empower Your Presence with Branding Hopes</motion.p>
+          <motion.div variants={item} className="landingTitle text-7xl font-bold text-white">
             <span className="text-[#fca311]">Turning Your Hopes<br /> </span>Into
             Brands
           </motion.div>
-          <motion.p variants={item} className="subText text-[1.3rem] font-normal text-[#e5e5e5]">
+          <motion.p variants={item} className="subText text-[1.2rem] font-normal text-[#e5e5e5]">
             Where Imagination Meets
             Innovation in Web Development, Design, SEO, and Digital Mastery
           </motion.p>
@@ -61,7 +61,7 @@ const Landing = () => {
         </motion.div>
         <div className="right flex-1 flex items-center justify-center">
           <motion.div variants={imgVariant} initial="initial" animate="animate" className="imgContainer w-[600px]">
-            <motion.img src="/Innovation-amico.svg" alt="" className="w-[100%] object-contain" />
+            <motion.img src="/Innovation-amico.svg" alt="" className="w-[80%] object-contain" />
           </motion.div>
         </div>
       </div>

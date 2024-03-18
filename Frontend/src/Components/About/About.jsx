@@ -10,22 +10,24 @@ import Button from "../ButtonNew/Button";
 function About({ type }) {
   return (
     <>
-      <div className="about-page text-center">
+      <div className="landingContainer about-page text-center">
         <div className="p-[100px] ">
           <div className=" m-auto px-6 md:px-12 xl:px-6">
             <div className="md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:5/12 lg:w-5/12 ">
                 <img
-                  src="https://img.freepik.com/free-photo/map-lying-wooden-table_53876-105723.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705363200&semt=ais"
+                  src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710794777/branding%20hopes/WhatsApp_Image_2024-03-18_at_18.29.33_053fad3d_xj2bv3.jpg"
+                  
                   alt="image"
-                  className="sm:w-[100%]"
+                  // h-[50vh] neechy
+                  className="sm:w-[100%] "
                 />
               </div>
               <div className="md:7/12 lg:w-6/12">
                 <h2 className="text-2xl text-[#fca311] font-bold md:text-4xl">
                   About Branding Hopes
                 </h2>
-                <p className="text mt-6 text-[#000000] text-center">
+                <p className="text mt-6 text-white text-center">
                   At Branding Hopes, we are more than just a digital marketing
                   agency – we are your partners in success. With a passion for
                   creativity and a drive for results, we are dedicated to
