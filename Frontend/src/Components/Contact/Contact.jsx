@@ -37,7 +37,8 @@ function Contact() {
     //
     <>
       <div className="flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 w-[100%]">
-        <div className="max-w-6xl mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8 bg-[url('https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503547/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_afbfff7c_gf9sfy.jpg')] bg-cover ">
+      {/* max-w-6xl  +++>> nechy*/}
+        <div className=" mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8 bg-[url('https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503547/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_afbfff7c_gf9sfy.jpg')] bg-cover ">
           {/* <div className=" font-bold text-3xl  flex justify-center  mb-[1rem]   ">
         Contact Us
       </div> */}
@@ -181,7 +182,7 @@ function Contact() {
                   onChange={(e) => setMessage(e.target.value)}
                     name=""
                     id=""
-                    cols="20"
+                    cols="0"
                     rows="10"
                     placeholder="Enter your Subject"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none resize-none"
