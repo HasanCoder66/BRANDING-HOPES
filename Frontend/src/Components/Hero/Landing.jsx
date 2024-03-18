@@ -41,8 +41,8 @@ const imgVariant = {
 const Landing = () => {
   return (
     // id='landing'
-    // bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503547/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_afbfff7c_gf9sfy.jpg")] bg-cover bg-center
-    <div className='landingContainer bg-[url("/bg-4.png")] bg-cover bg-center  overflow-x-hidden'>
+    // bg-[url("https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503547/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_afbfff7c_gf9sfy.jpg")] bg-cover bg-center bg-[url("/bg-4.png")] bg-cover bg-center
+    <div className='landingContainer overflow-x-hidden'>
       <div className="wrapper px-[80px] py-[20px] flex xl:flex-row flex-col item-center justify-between text-center uppercase font-['Poppins', sans-serif'] mt-[90px]">
         <motion.div variants={container} initial="hidden" animate="visible" className="left flex-1 flex flex-col items-center justify-center gap-[30px]">
           <motion.p variants={item} className="subText text-[1.3rem] font-normal text-[#e5e5e5]">Empower Your Presence with Branding Hopes</motion.p>
