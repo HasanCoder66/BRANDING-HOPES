@@ -4,21 +4,16 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 function Contact() {
   const form = useRef();
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [name, setName] = useState("");
-
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (
-      email === "" ||
-      number === "" ||
-      name === "" 
-    ) {
+    if (email === "" || number === "" || name === "" || message === "") {
       return toast.error("Missings Fields");
     } else {
       console.log("send");
@@ -39,13 +34,15 @@ function Contact() {
     }
   };
   return (
+    //
     <>
-      <div className=" font-bold text-3xl  flex justify-center  mb-[1rem] ">
-        Contact Us
-      </div>
       <div className="flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 w-[100%]">
-        <div className="max-w-6xl mx-auto sm:px-6 w-[100%] min-h-[370px] lg:px-8 bg-[#14213d] shadow-lg   bg-url(['https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503600/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_d669a89d_uooczs.jpg']) bg-cover bg-centershadow-gray-500/50">
+        <div className="max-w-6xl mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8 bg-[url('https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503547/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_afbfff7c_gf9sfy.jpg')] bg-cover ">
+          {/* <div className=" font-bold text-3xl  flex justify-center  mb-[1rem]   ">
+        Contact Us
+      </div> */}
           <div className="mt-8 overflow-hidden">
+            {/*  */}
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 mr-2 bg-[#e5e5e5] sm:rounded-lg">
                 <h1 className="text-3xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
@@ -129,7 +126,11 @@ function Contact() {
                 </div>
               </div>
 
-              <form className="p-6 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
+              <form
+                className="p-6 flex flex-col justify-center"
+                ref={form}
+                onSubmit={sendEmail}
+              >
                 <div className="flex flex-col">
                   <label for="name" className="hidden">
                     Full Name
@@ -171,23 +172,42 @@ function Contact() {
                     onChange={(e) => setNumber(e.target.value)}
                   />
                 </div>
-                <button type="submit" className="cursor-pointer  md:w-32  mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300">
+                <div className="flex flex-col mt-2">
+                  <label for="tel" className="hidden">
+                    Enter Your Subject
+                  </label>
+
+                  <textarea
+                  onChange={(e) => setMessage(e.target.value)}
+                    name=""
+                    id=""
+                    cols="20"
+                    rows="10"
+                    placeholder="Enter your Subject"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none resize-none"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="cursor-pointer  md:w-32  mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300"
+                >
                   <span>Submit</span>
                 </button>
               </form>
+
               <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition:Bounce
-      />
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition:Bounce
+              />
             </div>
           </div>
         </div>

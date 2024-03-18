@@ -11,8 +11,8 @@ function About({ type }) {
   return (
     <>
       <div className="about-page text-center">
-        <div className="pt-[100px] ">
-          <div className="container m-auto px-6 md:px-12 xl:px-6">
+        <div className="p-[100px] ">
+          <div className=" m-auto px-6 md:px-12 xl:px-6">
             <div className="md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:5/12 lg:w-5/12 ">
                 <img
