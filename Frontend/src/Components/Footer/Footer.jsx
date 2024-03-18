@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 export default function Footer() {
     return (
-        <footer className=" border-y ">
+        <footer className=" border-y bg-white">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
-                                src="https://res.cloudinary.com/dz25g2syh/image/upload/v1707806556/BrandingHopes/BH_Logo_02-01_dwf8ak.png "
+                                src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710796608/branding%20hopes/Footer_logo_yob909.jpg"
                                 className="mr-3 "
                                 alt="Logo"
                             />
