@@ -12,6 +12,7 @@ import Portfolio from "./Pages/PortfolioPage/Portfolio";
 import Service from "./Pages/ServicesPage/Service";
 
 const Layout = () => {
+  // const [nav, setNav] = useState(false);
   const [nav, setNav] = useState(false);
   const openNav = () => setNav(true);
   const closeNav = () => setNav(false);
