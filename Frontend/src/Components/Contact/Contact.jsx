@@ -18,8 +18,8 @@ function Contact() {
     } else {
       console.log("send");
       emailjs
-        .sendForm("service_or4rkcq", "template_2q5x5yd", form.current, {
-          publicKey: "IErOLB5UYKwIo5_Ux",
+        .sendForm("service_nov0ltj", "template_nrp9fvf", form.current, {
+          publicKey: "mcrSWA35JOVCajwf0",
         })
         .then(
           () => {
