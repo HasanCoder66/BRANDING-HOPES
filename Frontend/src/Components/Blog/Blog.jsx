@@ -5,7 +5,7 @@ import BlogContentHead from "../BlogContentHead";
 
 function Blog() {
   return (
-    <div className="landingContainer ">
+    <div className=" ">
       <BlogContentHead />
       <BlogView />
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "./blogview.css";
+import Button from "../ButtonNew/Button";
 // import { useRef } from "react";
 // import { ToastContainer, toast } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
@@ -82,12 +83,7 @@ function BlogView() {
         type="text"
         className="blogDescInput w-100 mt-2 py-3 px-3 rounded-lg  text-black font-semibold focus:border-[#fca311] focus:outline-none"
       />
-      {/* onClick={createBlogHandler} */}
-      <button className="cursor-pointer btn">
-        <span>Create Blog</span>
-      </button>
-      {/* <button className="button  bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300 " >Create Blog</button> */}
-      {/* <ToastContainer /> */}
+      <Button text='Create Blog' />
     </div>
   );
 }
