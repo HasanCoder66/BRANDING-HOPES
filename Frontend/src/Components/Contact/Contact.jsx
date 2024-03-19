@@ -34,13 +34,10 @@ function Contact() {
     }
   };
   return (
-    //
     <>
-      <div className=" landingContainer flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 sm:pb-0 w-[100%] ">
-        {/* max-w-6xl  +++>> nechy*/}
-        <div className=" mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8  ">
-          <div className="overflow-hidden lg:px-[120px] px-[20px] pb-[40px]">
-            {/*  */}
+      <div className=" landingContainer flex items-top justify-between min-h-[500px] sm:items-center sm:pt-0 sm:pb-0 w-[100%] ">
+        <div className=" mx-auto  sm:px-6 w-[100vw] min-h-[370px] lg:px-8  ">
+          <div className="overflow-hidden lg:px-[120px] ">
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 mr-2 bg-[#e5e5e5] sm:rounded-lg">
                 <h1 className="text-3xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
@@ -126,7 +123,7 @@ function Contact() {
               </div>
 
               <form
-                className="p-6 flex flex-col justify-center"
+                className=" flex flex-col justify-center bg-[#e5e5e5] rounded-lg p-[1rem] "
                 ref={form}
                 onSubmit={sendEmail}
               >
@@ -139,7 +136,7 @@ function Contact() {
                     name="name"
                     id="name"
                     placeholder="Full Name"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-[#14213d] font-semibold focus:border-[#fca311] focus:outline-none"
+                    className="w-100  py-3 px-3 rounded-lg bg-white border border-gray-400 text-[#14213d] font-semibold focus:border-[#fca311] focus:outline-none "
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
@@ -153,7 +150,7 @@ function Contact() {
                     name="email"
                     id="email"
                     placeholder="Email"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none "
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
@@ -167,7 +164,7 @@ function Contact() {
                     name="tel"
                     id="tel"
                     placeholder="Telephone Number"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none "
                     onChange={(e) => setNumber(e.target.value)}
                   />
                 </div>
@@ -188,15 +185,15 @@ function Contact() {
                 </div>
                 <button
                   type="submit"
-                  // md:w-36 neechy 
-                  className="cursor-pointer    mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300"
+                  className="cursor-pointer    mt-[1.5rem] bg-[#14213d] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300 "
                 >
                   <span>Submit</span>
                 </button>
               </form>
 
               <ToastContainer
-                position="top-center"
+               style={{ marginTop: '11vh' }}
+                position="top-right"
                 autoClose={5000}
                 hideProgressBar={false}
                 newestOnTop={false}
