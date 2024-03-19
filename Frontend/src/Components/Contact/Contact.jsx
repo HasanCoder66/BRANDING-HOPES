@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import MapLocation from "../MapLocation/MapLocation";
 
 function Contact() {
   const form = useRef();
@@ -49,38 +50,11 @@ function Contact() {
                 <h1 className="text-3xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
                   Get in touch:
                 </h1>
-                <p className="text-normal text-lg sm:text-xl font-medium text-[#14213d]  mt-2">
+                <p className="text-normal text-lg sm:text-xl font-medium text-[#14213d]  mt-2 mb-6">
                   Fill the form to start a conversation
                 </p>
 
-                <div className="flex items-center mt-8 text-[#14213d] ">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    className="w-8 h-8 text-[#14213d] "
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <div className="ml-4 text-md tracking-wide font-semibold w-40 text-[#14213d] ">
-                    {/* Acme Inc, Street, State, Postal Code */}
-                    Karachi, Pakistan
-                  </div>
-                </div>
+               
 
                 <div className="flex items-center mt-4 text-[#14213d] ">
                   <svg
@@ -125,10 +99,38 @@ function Contact() {
                     hello@brandinghopes.com
                   </div>
 
-                  {/* <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231249.98573963484!2d67.10156955000001!3d25.09234665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3459beb43c7e9%3A0xb42aa8540579a82d!2sGadap%20Town%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh!5e0!3m2!1sen!2s!4v1710793732881!5m2!1sen!2s" width="600" height="450" style={{border:0}}></iframe>
-                  </div> */}
                 </div>
+                <div className="flex items-center mt-2 text-[#14213d] ">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    className="w-8 h-8 text-[#14213d] "
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <div className="ml-4 text-md tracking-wide font-semibold w-60 text-[#14213d] ">
+                    Al-Noor Socitey Near Ahsanabad Karachi, Pakistan 
+                    
+                  </div>
+                </div>
+                  <div className="mt-[2rem]">
+                   <MapLocation />
+                  </div>
               </div>
 
               <form
