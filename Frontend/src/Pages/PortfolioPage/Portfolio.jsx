@@ -3,7 +3,7 @@ import PortCard from '../../Components/PortfolioCard/PortCard'
 import cardData from '../../Components/PortfolioCard/cardDataPort'
 const Portfolio = () => {
   return (
-    <div className='flex flex-wrap justify-evenly '>
+    <div className='flex flex-wrap justify-evenly landingContainer'>
         {cardData.map((data) => (
             <PortCard data={data}/>
         ))}

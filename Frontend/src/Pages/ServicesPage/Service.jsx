@@ -41,7 +41,7 @@ const Service = () => {
   // console.log(data, "===>>>> data")
 
   return (
-    <div className="serviceContainer bg-[#14213d]">
+    <div className="serviceContainer landingContainer">
       <div className="serviceWrapper py-[150px] px-[76px]">
         <div className="mb-[30px]">
           <h1 className="text-[40px] font-bold text-white">
