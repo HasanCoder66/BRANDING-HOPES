@@ -68,19 +68,19 @@ function BlogView() {
         placeholder="Blog Content"
         // ref={blogcontent}
         type="text"
-        className="blogInput w-100 mt-2 py-3 px-3 rounded-lg bg-[#2c2e48]   text-white font-semibold focus:border-[#59c174] focus:outline-none"
+        className="blogInput w-100 mt-2 py-3 px-3 rounded-lg text-black font-semibold focus:border-[#fca311] focus:outline-none"
       />
       <input
         // ref={blogtitle}
         placeholder=" Blog Title"
         type="text"
-        className="blogTitleInput w-100 mt-2 py-3 px-3 rounded-lg bg-[#2c2e48]    text-white font-semibold focus:border-[#59c174] focus:outline-none"
+        className="blogTitleInput w-100 mt-2 py-3 px-3 rounded-lg   text-black font-semibold focus:border-[#fca311] focus:outline-none"
       />
       <input
         // ref={blogdescription}
         placeholder="Blog description "
         type="text"
-        className="blogDescInput w-100 mt-2 py-3 px-3 rounded-lg bg-[#2c2e48]   text-white font-semibold focus:border-[#59c174] focus:outline-none"
+        className="blogDescInput w-100 mt-2 py-3 px-3 rounded-lg    text-black font-semibold focus:border-[#fca311] focus:outline-none"
       />
       {/* onClick={createBlogHandler} */}
       <button className="cursor-pointer btn">

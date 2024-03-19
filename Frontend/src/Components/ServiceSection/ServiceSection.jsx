@@ -39,7 +39,7 @@ const ServiceSection = () => {
                 ))}
             </motion.div>
             <div className="flex justify-center">
-                <Button text="See More" link="/services" />
+                <Button text="See More" link="/services/logo" />
             </div>
         </div>
 

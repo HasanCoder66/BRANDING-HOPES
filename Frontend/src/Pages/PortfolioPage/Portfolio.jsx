@@ -7,7 +7,6 @@ const Portfolio = () => {
         {cardData.map((data) => (
             <PortCard data={data}/>
         ))}
-        {/*  */}
     </div>
   )
 }
