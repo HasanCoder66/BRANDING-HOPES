@@ -1,4 +1,3 @@
-// import './Contact.css'
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
@@ -38,11 +37,8 @@ function Contact() {
     //
     <>
       <div className=" landingContainer flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 sm:pb-0 w-[100%] ">
-      {/* max-w-6xl  +++>> nechy*/}
+        {/* max-w-6xl  +++>> nechy*/}
         <div className=" mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8  ">
-          {/* <div className=" font-bold text-3xl  flex justify-center  mb-[1rem]   ">
-        Contact Us
-      </div> */}
           <div className="mt-8 overflow-hidden px-[120px] pb-[40px]">
             {/*  */}
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -53,8 +49,6 @@ function Contact() {
                 <p className="text-normal text-lg sm:text-xl font-medium text-[#14213d]  mt-2 mb-6">
                   Fill the form to start a conversation
                 </p>
-
-               
 
                 <div className="flex items-center mt-4 text-[#14213d] ">
                   <svg
@@ -98,7 +92,6 @@ function Contact() {
                   <div className="ml-4 text-md tracking-wide font-semibold w-40 text-[#14213d] ">
                     hello@brandinghopes.com
                   </div>
-
                 </div>
                 <div className="flex items-center mt-2 text-[#14213d] ">
                   <svg
@@ -124,13 +117,12 @@ function Contact() {
                     />
                   </svg>
                   <div className="ml-4 text-md tracking-wide font-semibold w-60 text-[#14213d] ">
-                    Al-Noor Socitey Near Ahsanabad Karachi, Pakistan 
-                    
+                    Al-Noor Socitey Near Ahsanabad Karachi, Pakistan
                   </div>
                 </div>
-                  <div className="mt-[2rem]">
-                   <MapLocation />
-                  </div>
+                <div className="mt-[2rem]">
+                  <MapLocation />
+                </div>
               </div>
 
               <form
@@ -185,7 +177,7 @@ function Contact() {
                   </label>
 
                   <textarea
-                  onChange={(e) => setMessage(e.target.value)}
+                    onChange={(e) => setMessage(e.target.value)}
                     name=""
                     id=""
                     cols="0"
@@ -196,7 +188,8 @@ function Contact() {
                 </div>
                 <button
                   type="submit"
-                  className="cursor-pointer  md:w-32  mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300"
+                  // md:w-36 neechy 
+                  className="cursor-pointer    mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300"
                 >
                   <span>Submit</span>
                 </button>
