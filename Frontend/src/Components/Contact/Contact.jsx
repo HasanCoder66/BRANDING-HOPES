@@ -39,7 +39,7 @@ function Contact() {
       <div className=" landingContainer flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 sm:pb-0 w-[100%] ">
         {/* max-w-6xl  +++>> nechy*/}
         <div className=" mx-auto sm:px-6 w-[100vw] min-h-[370px] lg:px-8  ">
-          <div className="mt-8 overflow-hidden px-[120px] pb-[40px]">
+          <div className="overflow-hidden lg:px-[120px] px-[20px] pb-[40px]">
             {/*  */}
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div className="p-6 mr-2 bg-[#e5e5e5] sm:rounded-lg">

@@ -11,13 +11,13 @@ function About({ type }) {
   return (
     <>
       <div className="landingContainer about-page text-center">
-        <div className="p-[100px] ">
+        <div className="lg:p-[100px] py-[30px]">
           <div className=" m-auto px-6 md:px-12 xl:px-6">
             <div className="md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:5/12 lg:w-5/12 ">
                 <img
                   src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710794777/branding%20hopes/WhatsApp_Image_2024-03-18_at_18.29.33_053fad3d_xj2bv3.jpg"
-                  
+
                   alt="image"
                   // h-[50vh] neechy
                   className="sm:w-[100%] "
