@@ -161,7 +161,7 @@ function Contact() {
                   </label>
                   <input
                     type="tel"
-                    name="tel"
+                    name="number"
                     id="tel"
                     placeholder="Telephone Number"
                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none "
@@ -175,8 +175,8 @@ function Contact() {
 
                   <textarea
                     onChange={(e) => setMessage(e.target.value)}
-                    name=""
-                    id=""
+                    name="message"
+                    id="message"
                     cols="0"
                     rows="10"
                     placeholder="Enter your Subject"
