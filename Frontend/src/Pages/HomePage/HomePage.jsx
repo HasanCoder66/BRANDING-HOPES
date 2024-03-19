@@ -4,7 +4,7 @@ import BlogPage from "../BlogPage/BlogPage";
 import ContactPage from "../ContactPage/ContactPage";
 import About from "../../Components/About/About";
 import ServiceSection from "../../Components/ServiceSection/ServiceSection";
-import PortCard from "../../Components/PortfolioCard/PortCard";
+// import PortCard from "../../Components/PortfolioCard/PortCard";
 const HomePage = () => {
   return (
     <div className="homeContainer flex flex-col items-center">

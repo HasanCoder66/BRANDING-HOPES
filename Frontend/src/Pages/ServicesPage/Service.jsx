@@ -42,8 +42,8 @@ const Service = () => {
 
   return (
     <div className="serviceContainer landingContainer">
-      <div className="serviceWrapper py-[150px] px-[76px]">
-        <div className="mb-[30px]">
+      <div className="serviceWrapper py-[150px] md:px-[76px]">
+        <div className="mb-[30px] px-[20px]">
           <h1 className="text-[40px] font-bold text-white">
             <span className="text-[#fca311]">Affordable</span> Packages for Your{" "}
             <span className="text-[#fca311]">Business</span>
