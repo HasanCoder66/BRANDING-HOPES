@@ -13,9 +13,9 @@ const Nav = ({ openNav }) => {
           <Link to="/">
             <div className=" cursor-pointer">
               <img
-                src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710796608/branding%20hopes/Footer_logo_yob909.jpg "
+                src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710850947/branding%20hopes/Logo_AI-03_tqcttl.png"
                 alt="Branding-Hopes "
-                className=" h-[11vh]"
+                className=" w-[305px]"
               />
             </div>
           </Link>
