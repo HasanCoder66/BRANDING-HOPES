@@ -24,6 +24,9 @@ const Nav = ({ openNav }) => {
             <Link to="/">
               <div className="nav-link">Home</div>
             </Link>
+            <Link to='/services'>
+              <div className="nav-link">Services</div>
+            </Link>
             <div className="nav-link">
               <DropdownMenu />
             </div>
@@ -36,9 +39,7 @@ const Nav = ({ openNav }) => {
             <Link to="/blog">
               <div className="nav-link">Blog</div>
             </Link>
-            {/* <Link >
-              <div className="nav-link">Services</div>
-            </Link> */}
+           
             <Link to="/Contact">
               <div className="nav-link">Contact</div>
             </Link>

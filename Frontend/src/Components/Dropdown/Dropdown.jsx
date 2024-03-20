@@ -14,7 +14,7 @@ function DropdownMenu({ closeNav }) {
         onMouseOver={handleMouseEnter}
         onClick={() => setIsOpen(!isOpen)}
       >
-        Services
+        Packages
       </button>
       {isOpen && (
         <ul
