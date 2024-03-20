@@ -10,6 +10,7 @@ import BlogPage from "./Pages/BlogPage/BlogPage";
 import GetConsultant from "./Pages/GetConsultPage/GetConsultant";
 import Portfolio from "./Pages/PortfolioPage/Portfolio";
 import Service from "./Pages/ServicesPage/Service";
+import AllServices from "./Pages/Services/AllServices";
 
 const Layout = () => {
   // const [nav, setNav] = useState(false);
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         element: <AboutPage />,
       },
       {
+        path: "/services",
+        element: <AllServices />,
+      },
+      {
         path: "/portfolio",
         element: <Portfolio />,
       },
@@ -51,10 +56,10 @@ const router = createBrowserRouter([
         path: "/blog",
         element: <BlogPage />,
       },
-      {
-        path: "/getConsultancy",
-        element: <GetConsultant />,
-      },
+      // {
+      //   path: "/getConsultancy",
+      //   element: <GetConsultant />,
+      // },
       {
         path: "/services/:id",
         element: <Service />,
