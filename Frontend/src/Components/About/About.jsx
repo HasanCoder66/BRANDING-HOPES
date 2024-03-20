@@ -34,7 +34,7 @@ function About({ type }) {
                   helping businesses like yours thrive in the digital age.
                 </p>
                 <div className='mt-[2rem]'>
-                  <Button text='Learn More' />
+                  <Button text='Learn More' link='/about'/>
                 </div>
               </div>
             </div>

@@ -3,10 +3,10 @@ import Button from "../../Components/ButtonNew/Button";
 
 const AboutPage = () => {
   return (
-    <div className="min-h-[100vh] landingContainer py-[90px] flex flex-col justify-center items-center gap-[20px]">
+    <div className="min-h-[100vh] landingContainer py-[70px] flex flex-col justify-center items-center gap-[20px]">
       <div className="w-[100vw] ">
         <img
-          src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710794777/branding%20hopes/WhatsApp_Image_2024-03-18_at_18.29.33_053fad3d_xj2bv3.jpg"
+          src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710929235/branding%20hopes/Option_03_scel4o.jpg"
           alt="image"
           className="h-[50vh] w-[100%] object-cover	"
         />
@@ -16,14 +16,9 @@ const AboutPage = () => {
           About Branding Hopes
         </h2>
         <p className="text text-white text-center">
-          At Branding Hopes, we are more than just a digital marketing
-          agency – we are your partners in success. With a passion for
-          creativity and a drive for results, we are dedicated to
-          helping businesses like yours thrive in the digital age.
+        At Branding Hopes, we transcend the conventional role of a digital marketing agency. We are your steadfast partners, committed to propelling your success to new heights. Fueled by an unwavering passion for creativity and an unyielding dedication to tangible results, we stand alongside businesses like yours, empowering them to not just survive, but truly thrive in the dynamic landscape of the digital age. With our strategic insights, innovative solutions, and personalized approach, we pave the way for your brand's remarkable journey towards enduring success.
         </p>
-        <div className=''>
-          <Button text='Learn More' />
-        </div>
+        
       </div>
     </div>
   );
