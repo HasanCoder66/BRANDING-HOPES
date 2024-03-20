@@ -88,7 +88,7 @@ const Landing = () => {
             <motion.img
               src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710879604/branding%20hopes/hero_img_png_cmc52t.png"
               alt=""
-              className="w-[85%] object-contain"
+              className="w-[100%] object-contain"
             />
           </motion.div>
         </div>
