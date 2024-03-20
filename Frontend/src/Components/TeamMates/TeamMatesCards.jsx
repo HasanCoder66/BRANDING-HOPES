@@ -1,18 +1,18 @@
 import React from "react";
 import './TeamMates.css'
-const TeamMatesCard = ({ data  }) => {
-    const {name , imgUrl , city , Role , buttonContent } = data
-    // console.log(name);
+const TeamMatesCard = ({ data }) => {
+  const { name, imgUrl, city, Role, buttonContent } = data
+  // console.log(name);
   return (
-    <div className="card-container mb-[1.5rem]">
+    <div className="card-container mb-[1.5rem] px-[10px]">
       <span className="pro">PRO</span>
       <img
         className="round"
         src={imgUrl}
         alt={name}
       />
-      <h3 className="h3">{name}</h3>
-      <h6 className="h6">{city} </h6>
+      <h3 className="h3 text-[20px] font-bold text-[#ffffff]">{name}</h3>
+      <h6 className="h6 text-[14px]">{city} </h6>
       <p className="p  mb-[1rem]">
         {Role}
       </p>
@@ -20,7 +20,7 @@ const TeamMatesCard = ({ data  }) => {
         <button className="primary mb-[1rem]">{buttonContent} {name}</button>
         {/* <button className="primary ghost">Following</button> */}
       </div>
-    
+
     </div>
     // <div className="max-w-xs rounded overflow-hidden shadow-lg">
     //   <img className="w-full" src={imageUrl} alt={name} />
