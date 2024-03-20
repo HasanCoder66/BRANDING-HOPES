@@ -30,7 +30,7 @@ const AboutPage = () => {
         </p>
       </div>
       <div className="">
-        <div className="flex justify-evenly flex-wrap ">
+        <div className="flex justify-evenly flex-wrap gap-[15px]">
           {TeamMateData.map((data) => (
             <TeamMatesCard data={data} />
           ))}
