@@ -9,12 +9,13 @@ const Nav = ({ openNav }) => {
     <>
       {/* bg-[#14213d] */}
       <div className="navContainer w-[100%] fixed z-[10000] flex items-center  h-[11vh] bg-transparent shadow-md">
-        <div className="w-[100%] flex items-center justify-between h-[100%] px-[20px]">
+        <div className="w-[100%] flex items-center justify-between h-[100%] mx-[50px]">
           <Link to="/">
             <div className=" cursor-pointer w-[100%]">
               <img
-                src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710850875/branding%20hopes/Icon_PNG-02_ypgqyn.png "
-                className="w-[80px] h-[80px] object-contain "
+                // src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710850875/branding%20hopes/Icon_PNG-02_ypgqyn.png "
+                 src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710929421/branding%20hopes/Logo_PNG_u07vul.png"
+                className="w-[220px] h-[80px] object-contain "
               />
               {/* BrandingHopes */}
             </div>

@@ -16,7 +16,7 @@ function About({ type }) {
             <div className="md:flex md:gap-6 lg:items-center lg:gap-12">
               <div className="md:5/12 lg:w-5/12 ">
                 <img
-                  src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710794777/branding%20hopes/WhatsApp_Image_2024-03-18_at_18.29.33_053fad3d_xj2bv3.jpg"
+                src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710929235/branding%20hopes/Option_03_scel4o.jpg"
 
                   alt="image"
                   // h-[50vh] neechy
