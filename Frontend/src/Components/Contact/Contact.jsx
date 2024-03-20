@@ -35,10 +35,10 @@ function Contact() {
   };
   return (
     <>
-      <div className=" landingContainer flex items-top justify-between min-h-[500px] sm:items-center sm:pt-0 sm:pb-0 w-[100%] ">
-        <div className=" mx-auto  sm:px-6 w-[100vw] min-h-[370px] lg:px-8  ">
+      <div className=" landingContainer flex items-top justify-between min-h-[500px] sm:items-center sm:pt-0 sm:pb-0 w-[100%]]">
+        <div className=" mx-auto my-auto  sm:px-6 w-[100vw] min-h-[370px] lg:px-8  ">
           <div className="overflow-hidden lg:px-[120px] ">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
               <div className="p-6 mr-2 bg-[#e5e5e5] sm:rounded-lg">
                 <h1 className="text-3xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
                   Get in touch:
@@ -136,7 +136,7 @@ function Contact() {
                     name="name"
                     id="name"
                     placeholder="Full Name"
-                    className="w-100  py-3 px-3 rounded-lg bg-white border border-gray-400 text-[#14213d] font-semibold focus:border-[#fca311] focus:outline-none "
+                    className="w-100  py-3 px-3 rounded-lg bg-white border border-gray-400 text-[#14213d] font-semibold focus:border-[#fca311] focus:outline-none"
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
@@ -192,7 +192,7 @@ function Contact() {
               </form>
 
               <ToastContainer
-               style={{ marginTop: '11vh' }}
+                style={{ marginTop: '11vh' }}
                 position="top-right"
                 autoClose={5000}
                 hideProgressBar={false}

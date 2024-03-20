@@ -8,19 +8,19 @@ const Nav = ({ openNav }) => {
   return (
     <>
       {/* bg-[#14213d] */}
-      <div className="navContainer w-[100%] fixed z-[10000] flex items-center  h-[11vh] bg-transparent shadow-md">
-        <div className="w-[100%] flex items-center justify-between h-[100%] mx-[50px]">
+      <div className="navContainer w-[100%] fixed z-[10000] flex items-center justify-between px-[10px] h-[11vh] bg-transparent shadow-md">
+        <div className="md:w-[100%] w-fit md:flex items-center justify-between h-[100%] lg:mx-[50px]">
           <Link to="/">
             <div className=" cursor-pointer w-[100%]">
               <img
                 // src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710850875/branding%20hopes/Icon_PNG-02_ypgqyn.png "
-                 src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710929421/branding%20hopes/Logo_PNG_u07vul.png"
+                src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710929421/branding%20hopes/Logo_PNG_u07vul.png"
                 className="w-[220px] h-[80px] object-contain "
               />
               {/* BrandingHopes */}
             </div>
           </Link>
-          <div className="flex gap-[50px] ">
+          <div className="flex lg:gap-[50px] gap-[15px]">
             <Link to="/">
               <div className="nav-link">Home</div>
             </Link>
@@ -39,7 +39,7 @@ const Nav = ({ openNav }) => {
             <Link to="/blog">
               <div className="nav-link">Blog</div>
             </Link>
-           
+
             <Link to="/Contact">
               <div className="nav-link">Contact</div>
             </Link>

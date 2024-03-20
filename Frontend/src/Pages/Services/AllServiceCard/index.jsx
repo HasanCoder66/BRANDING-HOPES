@@ -9,9 +9,9 @@ import Button from "../../../Components/ButtonNew/Button";
 function AllServiceCardCmp({ data }) {
   // console.log(data, "data from service card");
   return (
-    <Card sx={{ maxWidth: 345, marginTop: 5 }}>
+    <Card sx={{ maxWidth: 345, marginTop: 5, display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 180 }}
         image={data?.imgUrl}
         title={data?.title}
       />
@@ -19,7 +19,7 @@ function AllServiceCardCmp({ data }) {
         <Typography gutterBottom variant="h5" component="div">
           {data?.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography sx={{ minHeight: 80 }} variant="body2" color="text.secondary">
           {data?.desc}
         </Typography>
       </CardContent>
