@@ -22,26 +22,26 @@ const Nav = ({ openNav }) => {
           </Link>
           <div className="flex lg:gap-[50px] gap-[15px]">
             <Link to="/">
-              <div className="nav-link">Home</div>
+              <div className="nav-link text-[#fca311]">Home</div>
             </Link>
             <Link to='/services'>
-              <div className="nav-link">Services</div>
+              <div className="nav-link text-[#fca311]">Services</div>
             </Link>
-            <div className="nav-link">
+            <div className="nav-link text-[#fca311]">
               <DropdownMenu />
             </div>
             <Link to="/about">
-              <div className="nav-link">About</div>
+              <div className="nav-link text-[#fca311]">About</div>
             </Link>
             <Link to='/portfolio'>
-              <div className="nav-link">Portfolio</div>
+              <div className="nav-link text-[#fca311]">Portfolio</div>
             </Link>
             <Link to="/blog">
-              <div className="nav-link">Blog</div>
+              <div className="nav-link text-[#fca311]">Blog</div>
             </Link>
 
             <Link to="/Contact">
-              <div className="nav-link">Contact</div>
+              <div className="nav-link text-[#fca311]">Contact</div>
             </Link>
           </div>
         </div>
