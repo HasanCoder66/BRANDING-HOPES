@@ -1,4 +1,4 @@
-export const logoPackage = [
+export const graphicDesign = [
     {
         title: "Basic Logo",
         price: "34.99",
