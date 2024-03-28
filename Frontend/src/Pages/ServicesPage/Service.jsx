@@ -1,17 +1,13 @@
 import React from "react";
 import ServiceCard from "../../Components/ServiceCard/ServiceCard";
 import {
-  logoPackage,
+  graphicDesign,
   websitePackage,
-  ecommercePackage,
   seoPackage,
   smmPackage,
   videoPackage,
-  brandingPackage,
-  hostingPackage,
 } from "./DummyServices";
 import { useLocation } from "react-router-dom";
-import GetConsultant from "../GetConsultPage/GetConsultant";
 
 const Service = () => {
   const { pathname } = useLocation();
@@ -20,25 +16,23 @@ const Service = () => {
   // console.log(packageName, "====>>>> package")
 
   let data =
-    packageName === "logo"
-      ? logoPackage
+    packageName === "graphicdesign"
+      ? graphicDesign
       : packageName === "web"
-      ? websitePackage
-      : packageName === "ecommerce"
-      ? ecommercePackage
-      : packageName === "seo"
-      ? seoPackage
-      : packageName === "smm"
-      ? smmPackage
-      : packageName === "video"
-      ? videoPackage
-      : packageName === "branding"
-      ? brandingPackage
-      : packageName === "hosting"
-      ? hostingPackage
-      : [];
-
-  // console.log(data, "===>>>> data")
+        ? websitePackage
+        : packageName === "ppc"
+          ? []
+          : packageName === "seo"
+            ? seoPackage
+            : packageName === "smm"
+              ? smmPackage
+              : packageName === "video"
+                ? videoPackage
+                : packageName === "contentwriting"
+                  ? []
+                  : packageName === "blogging"
+                    ? []
+                    : packageName === "copywriting" ? [] : packageName === "typing" ? [] : [];
 
   return (
     <div className="serviceContainer landingContainer">
@@ -59,7 +53,6 @@ const Service = () => {
           ))}
         </div>
       </div>
-      {/* <GetConsultant /> */}
     </div>
   );
 };
