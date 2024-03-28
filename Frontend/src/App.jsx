@@ -7,7 +7,7 @@ import Footer from "./Components/Footer/Footer";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import ContactPage from "./Pages/ContactPage/ContactPage";
 import BlogPage from "./Pages/BlogPage/BlogPage";
-import GetConsultant from "./Pages/GetConsultPage/GetConsultant";
+// import GetConsultant from "./Pages/GetConsultPage/GetConsultant";
 import Portfolio from "./Pages/PortfolioPage/Portfolio";
 import Service from "./Pages/ServicesPage/Service";
 import AllServices from "./Pages/Services/AllServices";
