@@ -2,6 +2,7 @@
 import "./landing.css";
 import Button from "../ButtonNew/Button";
 import { motion } from "framer-motion";
+import TextEffect from "../TextEffect/TextEffects";
 
 const container = {
   hidden: { opacity: 0, scale: 0 },
@@ -58,7 +59,7 @@ const Landing = () => {
             className="landingTitle text-7xl font-bold text-white"
           >
             <span className="text-[#fca311]">
-              Turning Your Hopes
+              Turning Your <span ><TextEffect /> </span>
               <br />{" "}
             </span>
             Into Brands

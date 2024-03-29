@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MapLocation from "../MapLocation/MapLocation";
-import ReCAPCTHA from 'react-google-recaptcha'
+// import ReCAPCTHA from 'react-google-recaptcha'
 //    Site key
 function Contact() {
   const form = useRef();
