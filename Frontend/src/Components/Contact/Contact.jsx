@@ -41,9 +41,9 @@ function Contact() {
           <div className="overflow-hidden lg:px-[120px] ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
               <div className="p-6 mr-2 bg-[#e5e5e5] sm:rounded-lg">
-                <h1 className="text-3xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
+                <h2 className="text-2xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
                   Get in touch:
-                </h1>
+                </h2>
                 <p className="text-normal text-lg sm:text-xl font-medium text-[#14213d]  mt-2 mb-6">
                   Fill the form to start a conversation
                 </p>

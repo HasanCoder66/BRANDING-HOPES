@@ -1,10 +1,20 @@
 import Button from "../../Components/ButtonNew/Button";
 import TeamMatesCard from "../../Components/TeamMates/TeamMatesCards";
-
+import { Helmet } from "react-helmet-async";
 import TeamMateData from "../../Components/TeamMates/data";
 const AboutPage = () => {
   console.log(TeamMateData);
   return (
+    <>
+    <Helmet>
+        <meta
+          name="description"
+          content="At Branding Hopes, we transcend the conventional role of a digital
+          marketing agency. We are your steadfast partners, committed to
+          propelling your success to new heights."
+        />
+        <link rel='canonical' href='/about'/>
+      </Helmet>
     <div className="min-h-[100vh] landingContainer py-[70px] flex flex-col justify-center items-center gap-[20px]">
       <div className="w-[100vw] ">
         <img
@@ -37,6 +47,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

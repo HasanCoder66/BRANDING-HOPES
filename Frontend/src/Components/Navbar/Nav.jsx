@@ -15,7 +15,7 @@ const Nav = ({ openNav }) => {
               <img
                 // src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710850875/branding%20hopes/Icon_PNG-02_ypgqyn.png "
                 src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710929421/branding%20hopes/Logo_PNG_u07vul.png"
-                className="w-[220px] h-[80px] object-contain "
+                className="w-[220px] h-[80px] object-contain " alt="Branding Hopes"
               />
               {/* BrandingHopes */}
             </div>

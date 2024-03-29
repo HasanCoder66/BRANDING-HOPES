@@ -4,6 +4,7 @@ import Button from "../ButtonNew/Button";
 import { motion } from "framer-motion";
 import TextEffect from "../TextEffect/TextEffects";
 
+
 const container = {
   hidden: { opacity: 0, scale: 0 },
   visible: {
@@ -40,61 +41,67 @@ const imgVariant = {
 
 const Landing = () => {
   return (
-    <div className="landingContainer overflow-x-hidden w-[100%]">
-      <div className="wrapper w-[100%] px-[80px] py-[20px] flex xl:flex-row flex-col item-center justify-between text-center uppercase font-['Poppins', sans-serif'] mt-[90px]">
-        <motion.div
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="left flex-1 flex flex-col items-center justify-center gap-[30px]"
-        >
-          <motion.p
-            variants={item}
-            className="subText text-[1.2rem] font-normal text-[#e5e5e5]"
-          >
-            Empower Your Presence with Branding Hopes
-          </motion.p>
+    <>
+      
+      <div className="landingContainer overflow-x-hidden w-[100%]">
+        <div className="wrapper w-[100%] px-[80px] py-[20px] flex xl:flex-row flex-col item-center justify-between text-center uppercase font-['Poppins', sans-serif'] mt-[90px]">
           <motion.div
-            variants={item}
-            className="landingTitle text-7xl font-bold text-white"
+            variants={container}
+            initial="hidden"
+            animate="visible"
+            className="left flex-1 flex flex-col items-center justify-center gap-[30px]"
           >
-            <span className="text-[#fca311]">
-              Turning Your <span ><TextEffect /> </span>
-              <br />{" "}
-            </span>
-            Into Brands
+            <motion.p
+              variants={item}
+              className="subText text-[1.2rem] font-normal text-[#e5e5e5]"
+            >
+              Empower Your Presence with Branding Hopes
+            </motion.p>
+            <motion.div
+              variants={item}
+              className="landingTitle text-7xl font-bold text-white"
+            >
+              <span className="text-[#fca311]">
+                Turning Your{" "}
+                <span>
+                  <TextEffect />{" "}
+                </span>
+                <br />{" "}
+              </span>
+              Into Brands
+            </motion.div>
+            <motion.p
+              variants={item}
+              className="subText text-[1.2rem] font-normal text-[#e5e5e5]"
+            >
+              Where Imagination Meets Innovation in Web Development, Design,
+              SEO, and Digital Mastery
+            </motion.p>
+            <motion.div
+              variants={item}
+              className="btns flex justify-center gap-[20px]"
+            >
+              <Button text="Get Started" link="/" />
+              <Button text="Our Services" link="/services" />
+            </motion.div>
           </motion.div>
-          <motion.p
-            variants={item}
-            className="subText text-[1.2rem] font-normal text-[#e5e5e5]"
-          >
-            Where Imagination Meets Innovation in Web Development, Design, SEO,
-            and Digital Mastery
-          </motion.p>
-          <motion.div
-            variants={item}
-            className="btns flex justify-center gap-[20px]"
-          >
-            <Button text="Get Started" link="/" />
-            <Button text="Our Services" link="/services" />
-          </motion.div>
-        </motion.div>
-        <div className="right flex-1 flex items-center justify-center ">
-          <motion.div
-            variants={imgVariant}
-            initial="initial"
-            animate="animate"
-            className="imgContainer w-[600px]"
-          >
-            <motion.img
-              src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710879604/branding%20hopes/hero_img_png_cmc52t.png"
-              alt=""
-              className="w-[100%] object-contain"
-            />
-          </motion.div>
+          <div className="right flex-1 flex items-center justify-center ">
+            <motion.div
+              variants={imgVariant}
+              initial="initial"
+              animate="animate"
+              className="imgContainer w-[600px]"
+            >
+              <motion.img
+                src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710879604/branding%20hopes/hero_img_png_cmc52t.png"
+                alt=""
+                className="w-[100%] object-contain"
+              />
+            </motion.div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

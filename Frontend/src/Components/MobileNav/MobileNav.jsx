@@ -18,7 +18,7 @@ const MobileNav = ({ nav, closeNav }) => {
         <img
         onClick={closeNav}
           src="https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710929421/branding%20hopes/Logo_PNG_u07vul.png"
-          className="w-[220px] h-[80px] object-contain "
+          className="w-[220px] h-[80px] object-contain " alt="Branding Hopes"
         /></Link>
         <Link to="/">
           <div className="nav-link-mobile" onClick={closeNav}>
