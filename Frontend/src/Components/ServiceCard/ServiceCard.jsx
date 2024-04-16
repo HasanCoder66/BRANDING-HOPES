@@ -13,7 +13,7 @@ const ServiceCard = ({ data }) => {
     // console.log(desc)
 
     return (
-        <div className='SCradContainer rounded-xl border-4 border-[#fca311] bg-white  max-w-[360px] mt-[15px] me-[15px] mb-[15px] hover:scale-[1.05] transition-all ease-in-out duration-300'>
+        <div className='SCradContainer rounded-xl border-4 border-[#fca311] bg-white  max-w-[360px] mt-[15px] mb-[15px] hover:scale-[1.05] transition-all ease-in-out duration-300 '>
             <div className="SCardWrapper">
                 <div className="title text-center py-[10px] px-[20px]">
                     <div className='text-black text-[12px] font-bold'>{data?.title}</div>

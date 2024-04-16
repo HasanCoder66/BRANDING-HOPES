@@ -8,7 +8,7 @@ const Button = ({ text, link }) => {
                 <span>{text}</span>
             </button> */}
 
-            <button className="cursor-pointer bg-[#14213d] md:w-32 lg:w-40  text-white font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] transition ease-in-out duration-300">
+            <button className="cursor-pointer bg-[#14213d] lg:w-40  text-white font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] transition ease-in-out duration-300">
                 <span>{text}</span>
             </button>
         </Link>
