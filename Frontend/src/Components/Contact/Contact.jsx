@@ -1,30 +1,26 @@
-// import './Contact.css'
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-
+import MapLocation from "../MapLocation/MapLocation";
+// import ReCAPCTHA from 'react-google-recaptcha'
+//    Site key
 function Contact() {
   const form = useRef();
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [name, setName] = useState("");
-
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    if (
-      email === "" ||
-      number === "" ||
-      name === "" 
-    ) {
+    if (email === "" || number === "" || name === "" || message === "") {
       return toast.error("Missings Fields");
     } else {
       console.log("send");
       emailjs
-        .sendForm("service_or4rkcq", "template_2q5x5yd", form.current, {
-          publicKey: "IErOLB5UYKwIo5_Ux",
+        .sendForm("service_nov0ltj", "template_nrp9fvf", form.current, {
+          publicKey: "mcrSWA35JOVCajwf0",
         })
         .then(
           () => {
@@ -40,49 +36,17 @@ function Contact() {
   };
   return (
     <>
-      <div className=" font-bold text-3xl  flex justify-center  mb-[1rem] ">
-        Contact Us
-      </div>
-      <div className="flex items-top justify-center min-h-[500px] sm:items-center sm:pt-0 w-[100%]">
-        <div className="max-w-6xl mx-auto sm:px-6 w-[100%] min-h-[370px] lg:px-8 bg-[#14213d] shadow-lg   bg-url(['https://res.cloudinary.com/dpvxkqhi8/image/upload/v1710503600/branding%20hopes/WhatsApp_Image_2024-03-15_at_16.38.38_d669a89d_uooczs.jpg']) bg-cover bg-centershadow-gray-500/50">
-          <div className="mt-8 overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className=" landingContainer flex items-top justify-between min-h-[500px] sm:items-center sm:pt-0 sm:pb-0 w-[100%]]">
+        <div className=" mx-auto my-auto  sm:px-6 w-[100vw] min-h-[370px] lg:px-8  ">
+          <div className="overflow-hidden lg:px-[120px] ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
               <div className="p-6 mr-2 bg-[#e5e5e5] sm:rounded-lg">
-                <h1 className="text-3xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
+                <h2 className="text-2xl sm:text-4xl text-[#14213d] font-extrabold tracking-tight">
                   Get in touch:
-                </h1>
-                <p className="text-normal text-lg sm:text-xl font-medium text-[#14213d]  mt-2">
-                  Fill in the form to start a conversation
+                </h2>
+                <p className="text-normal text-lg sm:text-xl font-medium text-[#14213d]  mt-2 mb-6">
+                  Fill the form to start a conversation
                 </p>
-
-                <div className="flex items-center mt-8 text-[#14213d] ">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    className="w-8 h-8 text-[#14213d] "
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <div className="ml-4 text-md tracking-wide font-semibold w-40 text-[#14213d] ">
-                    {/* Acme Inc, Street, State, Postal Code */}
-                    Karachi, Pakistan
-                  </div>
-                </div>
 
                 <div className="flex items-center mt-4 text-[#14213d] ">
                   <svg
@@ -127,9 +91,43 @@ function Contact() {
                     hello@brandinghopes.com
                   </div>
                 </div>
+                <div className="flex items-center mt-2 text-[#14213d] ">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    className="w-8 h-8 text-[#14213d] "
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                  <div className="ml-4 text-md tracking-wide font-semibold w-60 text-[#14213d] ">
+                    Al-Noor Socitey Near Ahsanabad Karachi, Pakistan
+                  </div>
+                </div>
+                <div className="mt-[2rem]">
+                  <MapLocation />
+                </div>
               </div>
 
-              <form className="p-6 flex flex-col justify-center" ref={form} onSubmit={sendEmail}>
+              <form
+                className=" flex flex-col justify-center bg-[#e5e5e5] rounded-lg p-[1rem] "
+                ref={form}
+                onSubmit={sendEmail}
+              >
                 <div className="flex flex-col">
                   <label for="name" className="hidden">
                     Full Name
@@ -139,7 +137,7 @@ function Contact() {
                     name="name"
                     id="name"
                     placeholder="Full Name"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-[#14213d] font-semibold focus:border-[#fca311] focus:outline-none"
+                    className="w-100  py-3 px-3 rounded-lg bg-white border border-gray-400 text-[#14213d] font-semibold focus:border-[#fca311] focus:outline-none"
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
@@ -153,7 +151,7 @@ function Contact() {
                     name="email"
                     id="email"
                     placeholder="Email"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none "
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
@@ -164,30 +162,50 @@ function Contact() {
                   </label>
                   <input
                     type="tel"
-                    name="tel"
+                    name="number"
                     id="tel"
                     placeholder="Telephone Number"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none "
                     onChange={(e) => setNumber(e.target.value)}
                   />
                 </div>
-                <button type="submit" className="cursor-pointer  md:w-32  mt-[1.5rem] bg-[#e5e5e5] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300">
+                <div className="flex flex-col mt-2">
+                  <label for="tel" className="hidden">
+                    Enter Your Subject
+                  </label>
+
+                  <textarea
+                    onChange={(e) => setMessage(e.target.value)}
+                    name="message"
+                    id="message"
+                    cols="0"
+                    rows="10"
+                    placeholder="Enter your Subject"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-[#fca311] focus:outline-none resize-none"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="cursor-pointer    mt-[1.5rem] bg-[#14213d] text-[#fca311] font-bold py-3 px-6 rounded-lg  hover:bg-[#fca311] hover:text-[#fafafa] transition ease-in-out duration-300 "
+                >
                   <span>Submit</span>
                 </button>
               </form>
+
               <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        transition:Bounce
-      />
+                style={{ marginTop: '11vh' }}
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                transition:Bounce
+              />
             </div>
           </div>
         </div>
